@@ -1,3 +1,12 @@
+# 🎣 FUTURE_CS_02 — Phishing Email Detection & Awareness System
+
+**Internship:** Future Interns — Cyber Security Intern
+**Task:** Task 2 — Phishing Email Detection & Awareness System  
+**Track Code:** CS  
+**Report Date:** April 2026
+
+---
+
 # 🛡️ PhishGuard
 
 **AI-Powered Phishing Email Scanner for Gmail**
@@ -24,13 +33,13 @@ PhishGuard is a Chrome extension that analyzes Gmail emails in real-time to dete
   - 🔴 Red (0-49): Dangerous
 - **Detailed Risk Cards**: See exactly what triggered each alert
 
-### 🎨 Modern UI
+###  Modern UI
 - Beautiful glassmorphic sidebar design
 - Smooth animations and transitions
 - Non-intrusive integration with Gmail
 - Responsive to all screen sizes
 
-## 🚀 Installation
+##  Installation
 
 ### Method 1: Load Unpacked (Developer Mode)
 
@@ -44,7 +53,7 @@ PhishGuard is a Chrome extension that analyzes Gmail emails in real-time to dete
 ### Method 2: Chrome Web Store (Coming Soon)
 _Once published, you'll be able to install directly from the Chrome Web Store_
 
-## 📖 Usage
+##  Usage
 
 1. **Open Gmail** in Chrome
 2. **Click on any email** to view its contents
@@ -150,18 +159,15 @@ Contributions are welcome! Please:
 
 MIT License - See LICENSE file for details
 
-## 👨‍💻 Author
-
-Built with ❤️ for safer email communications
-
-## 🙏 Acknowledgments
-
-- Gmail for the platform
-- Chrome Extensions API
-- The security research community
+## 👨‍💻 Author - DAVID MSEKENA 
 
 ---
 
 **⚠️ Disclaimer**: PhishGuard is a detection tool and should not be your only line of defense. Always verify suspicious emails through multiple channels and never click links or download attachments from untrusted sources.
 
-**Stay Safe Online! 🛡️**
+**Stay Safe Online!**
+
+*Report prepared by: Future Interns — Cyber Security Intern*  
+*Track Code: CS | Repository: FUTURE_CS_02*
+*Email: msekena.d@gmail.com*
+*Mobile: +255749604110 , Dar Es Salaam, Tanzania.*
