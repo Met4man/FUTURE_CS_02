@@ -1,7 +1,7 @@
 # 🎣 FUTURE_CS_02 — Phishing Email Detection & Awareness System
 
 **Internship:** Future Interns — Cyber Security Intern
-**Task:** Task 2 — Phishing Email Detection & Awareness System  
+**Task:**2 — Phishing Email Detection & Awareness System  
 **Track Code:** CS  
 **Report Date:** April 2026
 
