@@ -1,6 +1,6 @@
-#  FUTURE_CS_03 — API Security Risk Analysis
+#  FUTURE_CS_03 - API Security Risk Analysis
 
-**Task:** Task 3 — API Security Risk Analysis  
+**Task:** Task 3 - API Security Risk Analysis  
 **Target APIs:** Sample Public/Demo APIs (JSONPlaceholder, ReqRes, PokéAPI)  
 **Tools Used:** Postman · Browser DevTools · OWASP API Security Top 10  
 **Report Date:** April 2026
@@ -40,7 +40,7 @@ This report presents a security risk analysis of publicly accessible API endpoin
 
 ## 2. What is API Security?
 
-An **API (Application Programming Interface)** is the backbone of modern web and mobile applications — it's the channel through which apps communicate, send data, and perform actions. For example:
+An **API (Application Programming Interface)** is the backbone of modern web and mobile applications - it's the channel through which apps communicate, send data, and perform actions. For example:
 
 - Your banking app uses an API to check your balance
 - A shopping site uses APIs to process payments
