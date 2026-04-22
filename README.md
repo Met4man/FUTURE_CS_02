@@ -48,13 +48,13 @@ An **API (Application Programming Interface)** is the backbone of modern web and
 
 **Why does API security matter?**
 
->  **Business Analogy:** If your website is a shop, the API is the back door used by staff to move goods in and out. If that back door has a weak lock, a thief doesn't need to break through the front — they just walk in through the back.
+>  **Business Analogy:** If your website is a shop, the API is the back door used by staff to move goods in and out. If that back door has a weak lock, a thief doesn't need to break through the front - they just walk in through the back.
 
 Poor API security can lead to:
-- **Data breaches** — unauthorized access to customer or business data
-- **Account takeovers** — bypassing authentication to hijack user accounts
-- **Financial fraud** — manipulating transaction APIs
-- **Denial of service** — overwhelming APIs with requests to crash services
+- **Data breaches** - unauthorized access to customer or business data
+- **Account takeovers** - bypassing authentication to hijack user accounts
+- **Financial fraud** - manipulating transaction APIs
+- **Denial of service** - overwhelming APIs with requests to crash services
 
 ---
 
@@ -103,7 +103,7 @@ Step 6: Risk Mapping & Reporting
 
 ---
 
-### 🔴 FINDING-01 — Broken Object Level Authorization (BOLA)
+### 🔴 FINDING-01 - Broken Object Level Authorization (BOLA)
 **Severity:** HIGH | **OWASP API:** API1:2023  
 **Affected API:** JSONPlaceholder / ReqRes
 
@@ -150,7 +150,7 @@ def get_order(order_id: int, current_user = Depends(get_current_user)):
 
 ---
 
-### 🔴 FINDING-02 — Excessive Data Exposure in API Responses
+### 🔴 FINDING-02 - Excessive Data Exposure in API Responses
 **Severity:** HIGH | **OWASP API:** API3:2023  
 **Affected API:** JSONPlaceholder, ReqRes
 
@@ -183,10 +183,10 @@ Response:
 **Risk:** In real applications, this pattern might expose password hashes, internal user IDs, secret tokens, or administrative flags that the front-end never displays but exist in the response body. Attackers intercept these using browser DevTools or proxies.
 
 **Business Impact:**  
-Leaking internal data in API responses can expose customer PII, internal pricing logic, or security tokens — violating GDPR/data protection regulations and enabling targeted attacks.
+Leaking internal data in API responses can expose customer PII, internal pricing logic, or security tokens - violating GDPR/data protection regulations and enabling targeted attacks.
 
 **Remediation:**  
-- Implement **response filtering / serialization** — only return fields the client needs
+- Implement **response filtering / serialization** - only return fields the client needs
 - Use **DTO (Data Transfer Objects)** to define exactly what each endpoint exposes
 - Never rely on the front-end to hide sensitive fields
 
@@ -208,7 +208,7 @@ class UserPublicResponse(BaseModel):
 **Description:**  
 The API does not enforce rate limiting on authentication or data endpoints. An attacker can make unlimited requests per second with no throttling, CAPTCHA, or lockout mechanism.
 
-**Evidence (Postman Test — Rate Limit Check):**
+**Evidence (Postman Test - Rate Limit Check):**
 ```
 Sent 50 rapid successive requests to:
 POST https://reqres.in/api/login
@@ -220,10 +220,10 @@ No lockout or CAPTCHA triggered.
 
 **Business Impact:**  
 Without rate limiting, attackers can:
-- **Brute-force passwords** — try millions of password combinations
-- **Credential stuffing** — test large lists of stolen username/password pairs
-- **Scrape all data** — dump entire databases via repeated GET requests
-- **DoS attacks** — overwhelm the server with requests
+- **Brute-force passwords** - try millions of password combinations
+- **Credential stuffing** - test large lists of stolen username/password pairs
+- **Scrape all data**  dump entire databases via repeated GET requests
+- **DoS attacks** - overwhelm the server with requests
 
 **Remediation:**
 ```python
@@ -243,7 +243,7 @@ app.post('/api/login', loginLimiter, loginHandler);
 
 ---
 
-### 🟠 FINDING-04 — Lack of API Authentication on Sensitive Endpoints
+### 🟠 FINDING-04 - Lack of API Authentication on Sensitive Endpoints
 **Severity:** MEDIUM | **OWASP API:** API2:2023  
 **Affected API:** JSONPlaceholder
 
@@ -327,7 +327,7 @@ Communicate deprecation timelines and enforce sunset dates.
 
 ---
 
-### 🟡 FINDING-08 — Missing CORS Restriction
+### 🟡 FINDING-08 - Missing CORS Restriction
 **Severity:** LOW | **OWASP API:** API8:2023
 
 **Description:**  
@@ -365,12 +365,12 @@ Access-Control-Allow-Origin: https://yourdomain.com
 - ✅ Add **rate limiting** to authentication and sensitive endpoints
 - ✅ Implement **response filtering** — never expose more data than needed
 
-### Priority 2 — Implement Soon
+### Priority 2 - Implement Soon
 - ✅ Require **authentication tokens** (JWT/OAuth 2.0) on all write operations
 - ✅ Add **security headers** to all API responses
 - ✅ Restrict **CORS** to trusted origins only
 
-### Priority 3 — Best Practices
+### Priority 3 - Best Practices
 - ✅ Implement **API versioning**
 - ✅ Replace verbose error messages with **generic error responses**
 - ✅ Set up **API monitoring and anomaly detection**
@@ -429,5 +429,5 @@ API Lifecycle
 
 ---
 
-*Report prepared by: Future Interns — David Msekena*  
+*Report prepared by: Future Interns - David Msekena*  
 *Track Code: CS | Repository: FUTURE_CS_03*
