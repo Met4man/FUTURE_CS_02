@@ -1,5 +1,5 @@
 # Phishing Email Detection & Awareness System
-### Task 2 — FUTURE_CS_02
+### Task 2 - FUTURE_CS_02
 
 Academic phishing analysis report submitted as part of the **Future Interns Cyber Security Internship Programme**, Institute of Finance Management, Dar es Salaam.
 
@@ -16,7 +16,7 @@ Academic phishing analysis report submitted as part of the **Future Interns Cybe
 | **Internship** | Future Interns |
 | **Institution** | Institute of Finance Management |
 | **Date** | April 2025 |
-| **Classification** | Phishing Analysis — Educational |
+| **Classification** | Phishing Analysis - Educational |
 
 > **Disclaimer:** All email samples analysed in this report are either fabricated for educational purposes or sourced from publicly available phishing datasets. No real individuals or organisations were targeted or harmed.
 
